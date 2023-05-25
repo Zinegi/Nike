@@ -24,6 +24,7 @@ nav {
     border: 1px solid black;
 }
 
+/* Début du Formulaire */
 section {
     margin: 0 auto;
     width: 400px;
@@ -69,3 +70,4 @@ section {
   button {
     margin-left: .5em;
   }
+/* Fin du Formulaire */
