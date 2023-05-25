@@ -11,6 +11,13 @@ header {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
+    border: 1px solid black;
+}
+
+.logo {
+    width: ;
+    border: 1px solid black;
+
 }
