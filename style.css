@@ -25,16 +25,17 @@ nav {
 }
 
 /* Début du Formulaire */
-section {
+#formulaire {
     margin: 0 auto;
     width: 400px;
-    padding: 1em;
-    border: 1px solid #CCC;
+    padding: 50px;
+    border: 1px solid #000000;
     border-radius: 1em;
   }
   
-  section, fieldset {
+  fieldset {
     margin-top: 1em;
+    padding: 50px;
   }
   
   label {
@@ -63,7 +64,6 @@ section {
   }
   
   .button {
-
     padding-left: 90px; 
   }
   
