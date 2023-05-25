@@ -8,68 +8,39 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
-<body>
+<body id="formulaire">
     
-    
-    <h1>Voici le formulaire de contact pour nous informer en cas d'un problème.</h1>
-    <section id="formulaire">
-        <h2>Informations de contact</h2>
-        <fieldset>
-          <legend>Genre</legend>
-          <ul>
-              <li>
-                <label for="title_1">
-                  <input type="radio" id="title_1" name="title" value="M." >
-                  Monsieur
-                </label>
-              </li>
-              <li>
-                <label for="title_2">
-                  <input type="radio" id="title_2" name="title" value="Mme.">
-                  Madame
-                </label>
-              </li>
-          </ul>
-        </fieldset>
-        <p>
-          <label for="name">
-            <span>Nom&nbsp;: </span>
-            <strong><abbr title="required">*</abbr></strong>
-          </label>
-          <input type="text" id="name" name="username">
-        </p>
-        <p>
-          <label for="mail">
-            <span>e-mail&nbsp;:</span>
-            <strong><abbr title="required">*</abbr></strong>
-          </label>
-          <input type="email" id="mail" name="usermail">
-        </p>
-        <p>
-        <fieldset>
-          <legend>Produit</legend>
-          <ul>
-              <li>
-                <label for="title_1">
-                  <input type="radio" id="title_1" name="title" value="M." >
-                  T-shirt
-                </label>
-              </li>
-              <li>
-                <label for="title_2">
-                  <input type="radio" id="title_2" name="title" value="Mme.">
-                  Short
-                </label>
-              </li>
-          </ul>
-        </fieldset>
+    <div class="contactez-nous">
+        <h1>Contactez-nous</h1>
+        <p>Un problème, une question, autre chose qui vous passe par l'esprit ? N’hésitez pas à utiliser ce formulaire pour prendre contact avec nous !</p>
+        <form action="/page-traitement-donnees" method="post">
         <div>
-            <label for="msg">Message :</label>
-            <textarea id="msg" name="user_message"></textarea>
+        <label for="nom">Votre nom</label>
+        <input type="text" id="nom" name="nom" placeholder="Nom" required>
         </div>
-        <div class="button">
-            <button type="submit">Envoyer le message</button>
+        <div>
+        <label for="email">Votre e-mail</label>
+        <input type="email" id="email" name="email" placeholder="E-mail" required>
         </div>
-    </section>
+        <div>
+        <label for="sujet">Quel est le sujet de votre message ?</label>
+        <select name="sujet" id="sujet" required>
+        <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+        <option value="probleme-compte">Problème avec mon compte</option>
+        <option value="question-produit">Question à propos d’un produit</option>
+        <option value="suivi-commande">Suivi de ma commande</option>
+        <option value="autre">Autre...</option>
+        </select>
+        </div>
+        <div>
+        <label for="message">Votre message</label>
+        <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
+        </div>
+        <div>
+        <button type="submit" id="send">Envoyer</button>
+        </div>
+        </form>
+        </div>
+
 </body>
 </html>
