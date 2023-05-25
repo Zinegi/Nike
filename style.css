@@ -12,13 +12,42 @@ header {
 nav {
     display: flex;
     justify-content: space-around;
-    flex-direction: row;
+    align-items: center;
     border: 1px solid black;
 }
 
 .logo {
     border: 1px solid black;
 }
+
+.nav {
+    display: flex;
+   
+} 
+.nav ul li{
+    display: flex;
+    text-decoration: none;
+    margin: 20px;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 section {
     margin: 0 auto;
