@@ -12,27 +12,8 @@ header {
 nav {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    flex-direction: row;
     border: 1px solid black;
-    text-decoration: none;
-}
-
-
-.nav {
-    display: flex;
-}
-
-.nav ul li{
-    display: flex;
-    text-decoration: none;
-    margin: 20px;
-    
-}
-
-.nav ul {
-    display: flex;
-    justify-content:space-between ;
-
 }
 
 .logo {
