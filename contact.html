@@ -7,15 +7,58 @@
     <title>Contact</title>
 </head>
 <body>
-    <form action="/formulaire" method="post">
-        <div>
-            <label for="name">Nom :</label>
-            <input type="text" id="name" name="user_name">
-        </div>
-        <div>
-            <label for="mail">Email&nbsp;:</label>
-            <input type="email" id="mail" name="user_mail">
-        </div>
+    <h1>Voici le formulaire de contact pour nous informer en cas d'un problème.</h1>
+    <section>
+        <h2>Informations de contact</h2>
+        <fieldset>
+          <legend>Genre</legend>
+          <ul>
+              <li>
+                <label for="title_1">
+                  <input type="radio" id="title_1" name="title" value="M." >
+                  Monsieur
+                </label>
+              </li>
+              <li>
+                <label for="title_2">
+                  <input type="radio" id="title_2" name="title" value="Mme.">
+                  Madame
+                </label>
+              </li>
+          </ul>
+        </fieldset>
+        <p>
+          <label for="name">
+            <span>Nom&nbsp;: </span>
+            <strong><abbr title="required">*</abbr></strong>
+          </label>
+          <input type="text" id="name" name="username">
+        </p>
+        <p>
+          <label for="mail">
+            <span>e-mail&nbsp;:</span>
+            <strong><abbr title="required">*</abbr></strong>
+          </label>
+          <input type="email" id="mail" name="usermail">
+        </p>
+        <p>
+        <fieldset>
+          <legend>Produit</legend>
+          <ul>
+              <li>
+                <label for="title_1">
+                  <input type="radio" id="title_1" name="title" value="M." >
+                  T-shirt
+                </label>
+              </li>
+              <li>
+                <label for="title_2">
+                  <input type="radio" id="title_2" name="title" value="Mme.">
+                  Short
+                </label>
+              </li>
+          </ul>
+        </fieldset>
         <div>
             <label for="msg">Message :</label>
             <textarea id="msg" name="user_message"></textarea>
@@ -23,6 +66,6 @@
         <div class="button">
             <button type="submit">Envoyer le message</button>
         </div>
-    </form>
+    </section>
 </body>
 </html>
