@@ -26,6 +26,13 @@ nav {
 
 }
 
+.top-nav .feat {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding-left: 10px;
+}
+
 .account {
     display: flex;
     flex-direction: row;
